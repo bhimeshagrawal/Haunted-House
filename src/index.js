@@ -40,7 +40,7 @@ window.addEventListener('dblclick', () => {
 /**
  * GUI
  **/
-const gui = new dat.GUI()
+// const gui = new dat.GUI() 
 
 
 

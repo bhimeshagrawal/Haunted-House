@@ -1,14 +1,21 @@
 {
-  "name": "webpack-three-js-template",
+  "name": "haunted-house",
   "version": "1.0.0",
   "description": "",
+  "homepage": ".",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhimeshagrawal/Haunted-House.git"
+  },
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack-dev-server --config ./bundler/webpack.dev.js"
+    "dev": "webpack-dev-server --config ./bundler/webpack.dev.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ./dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Bhimesh Agrawal",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -18,6 +25,7 @@
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
+    "gh-pages": "^5.0.0",
     "glslify-loader": "^2.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
